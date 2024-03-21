@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <style>
+        body {
+            background-color: rgba(100, 113, 231, 0.473);
+            color: white;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <p>Aprendendo a utilizar <strong>DOM</strong> em JS</p>
+    <div id="query">Outra div</div>
+
+    <script>
+        var corpo = window.document.body
+
+        var p1 = window.document.getElementsByTagName("p")[1]
+
+        var d1 = window.document.getElementById("msg")
+
+        var d2 = window.document.querySelector("div#query")
+
+
+
+        p1.style.color = "red"
+        corpo.style.background= "black"
+        d1.style.background = "green"
+        d2.style.background = "blue"
+
+        
+        window.document.write("O primeiro parágrafo é: " + p1.innerText)
+        d1.innerText = "Testando"
+
+    </script>
+</body>
+</html>
