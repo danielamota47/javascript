@@ -1,6 +1,5 @@
 function converter() {
     let med = window.prompt("Digite uma distância em metros (m)")
-    
     let res = window.document.querySelector('div#res')
     
     let km = med/1000
